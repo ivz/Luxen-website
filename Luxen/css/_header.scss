@@ -1,0 +1,124 @@
+/*
+  ========================================
+  HEADER
+  ========================================
+*/
+
+/*Minor-Header*/
+.minor-header {
+	background: rgba(0,0,0,0.3);
+	color: #b1afaf;
+	font-size: 11px;
+	width: 100%;
+
+	h6 {
+		font-size: 11px;
+		font-weight: normal;
+	}
+
+	a {
+		color: #b1afaf;
+		padding: 0 5px;
+	}
+
+	ul {
+		list-style-type: none;
+		float: right;
+		margin: 15px 0;
+
+		li {
+			float: left;
+		}
+	}
+}
+
+.address {
+	float: left;
+	margin: 15px 0;
+	text-transform: none;
+}
+.english {
+	float: right;
+	border-left: 1px solid #504b4b;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+/*Major-Header*/
+.nav {
+	@include column(12);
+}
+.logo.white {
+	background: url(../images/logo.png) no-repeat center top;
+	width: 110px;
+	height: 60px;
+	float: left;
+	margin: 20px 0;
+}
+.major-header {
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	width: 100%;
+	z-index: 9999;
+	font-family: 'Varela Round', sans-serif;
+
+
+	ul {
+		float: right;
+		list-style-type: none;
+		text-transform: uppercase;
+		font-size: 11px;
+		// line-height: 40px;
+		margin: 0;
+		position: relative;
+
+		li {
+		float: left;
+		margin-top: 43px; //shame.css
+		position: relative;
+
+			ul {
+				display:none;
+				position: absolute;
+				width:auto;
+				top:57px;
+				padding-left: 0;
+				background: rgba(0,0,0,0.4);
+				// background: blue;
+				
+
+				li {
+					display:list-item; /* Set the sub navs list items back */
+					float:none;
+					margin-top: 0;
+
+					a {
+						display:block;
+						float:none;
+						padding: 24px 36px;
+					}
+				}
+			}
+
+			&:hover ul {
+				display: block;
+			}
+		}
+	}
+	
+}
+.contact-link ul a {
+	padding: 24px 34px !important;
+}
+
+.major-header li a {
+	padding: 44px 25px; //shame.css
+}
+
+.major-header a:hover {
+	background: rgba(0,0,0,0.6);
+	color: $orange;
+}
+li.contact-link {
+	margin-right: 20px !important;
+}

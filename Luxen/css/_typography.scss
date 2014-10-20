@@ -1,0 +1,35 @@
+/*
+  ========================================
+  TYPOGRAPHY
+  ========================================
+*/
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: normal;
+}
+h1 {
+	font-size: 18px;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+h2 {
+	font-size: 13px;
+	font-weight: 200;
+}
+h3 {
+	font-size: 15px;
+}
+p {
+	font-family: 'Muli', sans-serif;
+	color: #888;
+	line-height: 1.5 !important;
+	font-size: 14px;
+}
+span.price {
+	font-family: Verdana, sans-serif;
+}
+@font-face {
+    font-family: "Journal";
+    src: url(../font/JOURNAL.ttf) format("truetype");
+}
